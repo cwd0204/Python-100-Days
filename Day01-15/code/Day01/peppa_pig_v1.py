@@ -1,10 +1,26 @@
 # coding:utf-8
 import turtle as t
+
+# def setting():
+#     """设置参数"""
+#     t.pensize(4)
+#     # 隐藏海龟
+#     t.hideturtle()
+#     t.colormode(255)
+#     t.color((255, 155, 192), "pink")
+#     t.setup(840, 500)
+#     t.speed(10)
+
+# if __name__ == "__main":
+#     setting()
+
+
 t.pensize(4) # 设置画笔的大小
 t.colormode(255) # 设置GBK颜色范围为0-255
 t.color((255,155,192),"pink") # 设置画笔颜色和填充颜色(pink)
 t.setup(840,500) # 设置主窗口的大小为840*500
 t.speed(10) # 设置画笔速度为10
+
 #鼻子
 t.pu() # 提笔
 t.goto(-100,100) # 画笔前往坐标(-100,100)
@@ -13,14 +29,14 @@ t.seth(-30) # 笔的角度为-30°
 t.begin_fill() # 外形填充的开始标志
 a=0.4
 for i in range(120):
-   if 0<=i<30 or 60<=i<90:
-       a=a+0.08
-       t.lt(3) #向左转3度
-       t.fd(a) #向前走a的步长
-   else:
-       a=a-0.08
-       t.lt(3)
-       t.fd(a)
+    if 0<=i<30 or 60<=i<90:
+        a=a+0.08
+        t.lt(3) #向左转3度
+        t.fd(a) #向前走a的步长
+    else:
+        a=a-0.08
+        t.lt(3)
+        t.fd(a)
 t.end_fill() # 依据轮廓填充
 t.pu() # 提笔
 t.seth(90) # 笔的角度为90度
@@ -67,14 +83,14 @@ t.pd()
 t.seth(-30)
 a=0.4
 for i in range(60):
-   if 0<=i<30 or 60<=i<90:
-       a=a+0.08
-       t.lt(3) #向左转3度
-       t.fd(a) #向前走a的步长
-   else:
-       a=a-0.08
-       t.lt(3)
-       t.fd(a)
+    if 0<=i<30 or 60<=i<90:
+        a=a+0.08
+        t.lt(3) #向左转3度
+        t.fd(a) #向前走a的步长
+    else:
+        a=a-0.08
+        t.lt(3)
+        t.fd(a)
 t.end_fill()
 #耳朵
 t.color((255,155,192),"pink")
@@ -263,3 +279,4 @@ t.seth(0)
 t.circle(70,20)
 t.circle(10,330)
 t.circle(70,30)
+t.done()

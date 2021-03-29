@@ -1,6 +1,7 @@
 from turtle import *
 
-color('red', 'yellow')
+speed(110)
+color('green', 'red')
 begin_fill()
 
 while True:

@@ -279,7 +279,7 @@ def foot():
     forward(20)
 
 def tail():
-'''画尾巴'''
+    '''画尾巴'''
     pensize(4)
     color((255,155,192))
     penup()

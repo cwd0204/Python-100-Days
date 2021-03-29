@@ -3,6 +3,15 @@
 """
 from turtle import *
 
+def setting():
+    """设置参数"""
+    pensize(4)
+    # 隐藏海龟
+    hideturtle()
+    colormode(255)
+    color((255, 155, 192), "pink")
+    setup(840, 500)
+    speed(10)
 
 def nose(x,y):
     """画鼻子"""
@@ -76,11 +85,11 @@ def head(x, y):
         if 0<= i < 30 or 60 <= i < 90:
             a = a + 0.08
             lt(3) #向左转3度
-            fd(a) #向前走a的步长
+            forward(a) #向前走a的步长
         else:
             a = a - 0.08
             lt(3)
-            fd(a)
+            forward(a)
     end_fill()
 
 
@@ -177,15 +186,113 @@ def mouth(x,y):
     circle(40, 80)
 
 
-def setting():
-    """设置参数"""
+def body():
+    '''画身体'''
+    color("red",(255,99,71))
+    penup()
+    seth(90)
+    forward(-20)
+    seth(0)
+    forward(-78)
+    pendown()
+    begin_fill()
+    seth(-130)
+    circle(100,10)
+    circle(300,30)
+    seth(0)
+    forward(230)
+    seth(90)
+    circle(300,30)
+    circle(100,3)
+    color((255,155,192),(255,100,100))
+    seth(-135)
+    circle(-80,63)
+    circle(-150,24)
+    end_fill()
+
+def hand():
+    '''画手'''
+    color((255,155,192))
+    penup()
+    seth(90)
+    forward(-40)
+    seth(0)
+    forward(-27)
+    pendown()
+    seth(-160)
+    circle(300,15)
+    penup()
+    seth(90)
+    forward(15)
+    seth(0)
+    forward(0)
+    pendown()
+    seth(-10)
+    circle(-20,90)
+    penup()
+    seth(90)
+    forward(30)
+    seth(0)
+    forward(237)
+    pendown()
+    seth(-20)
+    circle(-300,15)
+    penup()
+    seth(90)
+    forward(20)
+    seth(0)
+    forward(0)
+    pendown()
+    seth(-170)
+    circle(20,90)
+
+def foot():
+    '''画脚'''
+
+    pensize(10)
+    color((240,128,128))
+    penup()
+    seth(90)
+    forward(-75)
+    seth(0)
+    forward(-180)
+    pendown()
+    seth(-90)
+    forward(40)
+    seth(-180)
+    color("black")
+    pensize(15)
+    forward(20)
+    pensize(10)
+    color((240,128,128))
+    penup()
+    seth(90)
+    forward(40)
+    seth(0)
+    forward(90)
+    pendown()
+    seth(-90)
+    forward(40)
+    seth(-180)
+    color("black")
+    pensize(15)
+    forward(20)
+
+def tail():
+'''画尾巴'''
     pensize(4)
-    # 隐藏海龟
-    hideturtle()
-    colormode(255)
-    color((255, 155, 192), "pink")
-    setup(840, 500)
-    speed(10)
+    color((255,155,192))
+    penup()
+    seth(90)
+    forward(70)
+    seth(0)
+    forward(95)
+    pendown()
+    seth(0)
+    circle(70,20)
+    circle(10,330)
+    circle(70,30)
+
 
 
 def main():
@@ -197,6 +304,10 @@ def main():
     eyes(0, 140)
     cheek(80, 10)
     mouth(-20, 30)
+    body()
+    hand()
+    foot()
+    tail()
     done()
 
 

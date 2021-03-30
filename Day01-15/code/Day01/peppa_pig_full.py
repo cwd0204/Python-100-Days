@@ -64,7 +64,7 @@ def head(x, y):
     goto(x,y)
     setheading(0)
     pendown()
-    
+
     begin_fill()
     setheading(180)
     circle(300, -30)
@@ -97,18 +97,21 @@ def ears(x,y):
     penup()
     goto(x, y)
     pendown()
+
     begin_fill()
     setheading(100)
     circle(-50, 50)
     circle(-10, 120)
     circle(-50, 54)
     end_fill()
+
     penup()
     setheading(90)
     forward(-12)
     setheading(0)
     forward(30)
     pendown()
+
     begin_fill()
     setheading(90)
     circle(-50, 50)
@@ -126,9 +129,11 @@ def eyes(x,y):
     setheading(0)
     forward(-95)
     pendown()
+
     begin_fill()
     circle(15)
     end_fill()
+
     color("black")
     penup()
     setheading(90)
@@ -136,9 +141,11 @@ def eyes(x,y):
     setheading(0)
     forward(-3)
     pendown()
+
     begin_fill()
     circle(3)
     end_fill()
+
     color((255, 155, 192), "white")
     penup()
     seth(90)
@@ -146,9 +153,11 @@ def eyes(x,y):
     seth(0)
     forward(40)
     pendown()
+
     begin_fill()
     circle(15)
     end_fill()
+
     color("black")
     penup()
     setheading(90)
@@ -156,6 +165,7 @@ def eyes(x,y):
     setheading(0)
     forward(-3)
     pendown()
+
     begin_fill()
     circle(3)
     end_fill()
@@ -168,6 +178,7 @@ def cheek(x,y):
     goto(x,y)
     pendown()
     setheading(0)
+
     begin_fill()
     circle(30)
     end_fill()
@@ -242,6 +253,7 @@ def left_feet(x,y):
     pendown()
     pencolor(238,201,0)
     fillcolor(238,230,132)
+
     begin_fill()
     setheading(0)
     forward(24)
@@ -268,6 +280,7 @@ def right_feet(x,y):
     pendown()
     pencolor(238,201,0)
     fillcolor(238,230,132)
+
     begin_fill()
     setheading(0)
     forward(24)
@@ -297,6 +310,7 @@ def backg(x):
     goto(-420,x)
     setheading(0)
     fillcolor(50,205,50)
+
     begin_fill()
     forward(840)
     right(90)
@@ -306,8 +320,10 @@ def backg(x):
     right(90)
     forward(300)
     end_fill()
+
     setheading(0)
     fillcolor(0,191,255)
+
     begin_fill()
     forward(840)
     left(90)
@@ -318,12 +334,13 @@ def backg(x):
     forward(600)
     end_fill()
 
-def cloude1(x, y):
+def cloud_a(x, y):
     """画云"""
     penup()
     goto(x,y)
     setheading(90)
     fillcolor(255,255,255)
+
     begin_fill()
     a = 0.4
     for i in range(120):
@@ -339,12 +356,13 @@ def cloude1(x, y):
             forward(a)
     end_fill()
 
-def cloude2(x, y):
+def cloud_b(x, y):
     """画云"""
     penup()
     goto(x,y)
     setheading(90)
     fillcolor(255,255,255)
+
     begin_fill()
     a = 0.4
     for i in range(120):
@@ -386,8 +404,8 @@ def main():
     left_feet(10,-150)
     right_feet(90,-150)
     tail(130,-110)
-    cloude1(-200,200)
-    cloude2(300,300)
+    cloud_a(-200,200)
+    cloud_b(300,300)
     done()
 
 

@@ -184,6 +184,7 @@ def body(x,y):
     pencolor('red')
     fillcolor(250,106,106)
     pendown()
+    
     begin_fill()
     setheading(-66)
     circle(-450,17)
@@ -222,7 +223,7 @@ def body(x,y):
     right(100)
     forward(20)
 
-def feet1(x,y):
+def left_feet(x,y):
     pensize(7)
     pencolor(255, 192, 203)
     penup()
@@ -248,7 +249,7 @@ def feet1(x,y):
     forward(12)
     end_fill()
 
-def feet2(x,y):
+def right_feet(x,y):
     pensize(7)
     pencolor(255, 192, 203)
     penup()
@@ -376,8 +377,8 @@ def main():
     cheek(80, 10)
     mouth(-20, 30)
     body(105,-20)
-    feet1(10,-150)
-    feet2(90,-150)
+    left_feet(10,-150)
+    right_feet(90,-150)
     tail(130,-110)
     cloude1(-200,200)
     cloude2(300,300)

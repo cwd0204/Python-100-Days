@@ -13,11 +13,17 @@ def setting():
     setup(840, 500)
     speed(10)
 
+def my_goto(x, y):
+    penup()
+    goto(x, y)
+    pendown()
+    
+
 def nose(x,y):
     """画鼻子"""
     my_goto(x, y)
     setheading(-30)
-    
+
     begin_fill()
     a = 0.4
     for i in range(120):
@@ -188,11 +194,6 @@ def mouth(x,y):
     setheading(-80)
     circle(30, 40)
     circle(40, 80)
-
-def my_goto(x, y):
-    penup()
-    goto(x, y)
-    pendown()
 
 
 def body():

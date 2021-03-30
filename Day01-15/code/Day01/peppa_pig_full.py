@@ -12,6 +12,7 @@ def nose(x,y):
     pendown()
     # 设置海龟的方向（0-东、90-北、180-西、270-南）
     setheading(-30)
+
     begin_fill()
     fillcolor(255, 192, 203)
     a = 0.4
@@ -27,6 +28,7 @@ def nose(x,y):
             left(3)
             forward(a)
     end_fill()
+
     penup()
     setheading(90)
     forward(25)
@@ -36,16 +38,19 @@ def nose(x,y):
     # 设置画笔的颜色(红, 绿, 蓝)
     pencolor(255, 155, 192)
     setheading(10)
+
     begin_fill()
     circle(5)
     color(160, 82, 45)
     end_fill()
+
     penup()
     setheading(0)
     forward(20)
     pendown()
     pencolor(255, 155, 192)
     setheading(10)
+
     begin_fill()
     circle(5)
     color(160, 82, 45)
@@ -59,6 +64,7 @@ def head(x, y):
     goto(x,y)
     setheading(0)
     pendown()
+    
     begin_fill()
     setheading(180)
     circle(300, -30)
@@ -184,7 +190,7 @@ def body(x,y):
     pencolor('red')
     fillcolor(250,106,106)
     pendown()
-    
+
     begin_fill()
     setheading(-66)
     circle(-450,17)
